@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapters — Her Three Fools</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a class="nav-logo" href="index.html">Her Three Fools</a>
+            <ul class="nav-links">
+                <li><a href="index.html#prolog">Prolog</a></li>
+                <li><a href="index.html#characters">Characters</a></li>
+                <li><a href="chapters.html">Chapters</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Ganti tema"
+                style="cursor:pointer;border:none;font-family:'Inter',sans-serif;">
+                <div class="toggle-icon" id="icon-dark">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+                </div>
+                <div class="toggle-icon" id="icon-light">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                        </svg>
+                </div>
+            </button>
+            <button class="hamburger-btn" onclick="openMobileMenu()" aria-label="Menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M3 6h18M3 12h18M3 18h18" /></svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Tutup menu">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+        <a href="index.html#prolog">Prolog</a>
+        <a href="index.html#characters">Characters</a>
+        <a href="chapters.html">Chapters</a>
+    </div>
+
+    <!-- CHAPTERS PAGE HEADER -->
+    <section class="section" id="chapters" style="padding-top: 140px;">
+        <div class="section-label"><span>Chapters</span></div>
+        <div class="chapters-grid">
+
+            <a class="chapter-card" href="chapter-1.html">
+                <div class="chapter-status status-available">Available</div>
+                <div class="chapter-num">01</div>
+                <div class="chapter-title">Awal Dari Semua Masalah</div>
+                <div class="chapter-desc">Satu hari biasa di SMA Haewon &mdash; sampai tiga nama yang sama
+                    muncul bergantian di hadapan Ra Hee.</div>
+            </a>
+
+            <a class="chapter-card" href="chapter-2.html">
+                <div class="chapter-status status-available">Available</div>
+                <div class="chapter-num">02</div>
+                <div class="chapter-title">Luka Lama</div>
+                <div class="chapter-desc">Baek Ryu Jin bukan orang asing. Dan itu yang membuat segalanya lebih
+                    rumit.</div>
+            </a>
+
+            <div class="chapter-card locked">
+                <div class="chapter-status status-soon">Coming Soon</div>
+                <div class="chapter-num">03</div>
+                <div class="chapter-title">Mr. Perfect & Gadis Sempurna</div>
+                <div class="chapter-desc">Shin Joon Ho tidak pernah melirik orang seperti Ra Hee. Sampai hari itu.
+                </div>
+            </div>
+
+            <div class="chapter-card locked">
+                <div class="chapter-status status-soon">Coming Soon</div>
+                <div class="chapter-num">04</div>
+                <div class="chapter-title">Taruhan</div>
+                <div class="chapter-desc">Jung Woo Bin adalah orang paling menyebalkan yang pernah Ra Hee temui.
+                    Tapi kenapa dia selalu ada?</div>
+            </div>
+
+            <div class="chapter-card locked">
+                <div class="chapter-status status-soon">Coming Soon</div>
+                <div class="chapter-num">05</div>
+                <div class="chapter-title">&mdash;</div>
+                <div class="chapter-desc">Segera hadir.</div>
+            </div>
+
+            <div class="chapter-card locked">
+                <div class="chapter-status status-soon">Coming Soon</div>
+                <div class="chapter-num">06</div>
+                <div class="chapter-title">&mdash;</div>
+                <div class="chapter-desc">Segera hadir.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-title">Her Three Fools</div>
+        <div class="footer-note">Original AU &middot; Semua karakter adalah fiksi &middot; Dilarang plagiasi</div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+
+</html>
