@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baek Ryu Jin | Her Three Fools</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a class="nav-logo" href="../index.html">Her Three Fools</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#prolog">Prolog</a></li>
+                <li><a href="../index.html#characters" class="current">Characters</a></li>
+                <li><a href="../index.html#chapters">Chapters</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Ganti tema" style="cursor:pointer;border:none;font-family:'Inter',sans-serif;">
+                <div class="toggle-icon" id="icon-dark">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </div>
+                <div class="toggle-icon" id="icon-light">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                </div>
+            </button>
+            <button class="hamburger-btn" onclick="openMobileMenu()" aria-label="Menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Tutup menu">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <a href="../index.html#prolog">Prolog</a>
+        <a href="../index.html#characters" class="current">Characters</a>
+        <a href="../index.html#chapters">Chapters</a>
+    </div>
+
+    <div class="char-hero">
+        <div class="char-hero-photo">
+            <img src="../assets/images/baek-ryu-jin.jpg" alt="Baek Ryu Jin" />
+        </div>
+        <div class="char-hero-info">
+            <a class="reader-back" href="../index.html#characters"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg> Kembali ke Daftar Karakter</a>
+            <div class="hero-eyebrow">"Black Fox"</div>
+            <h1 class="reader-title">Baek Ryu Jin</h1>
+            <div class="char-hero-name-kr">백류진 · Kelas 11-B</div>
+            <p class="char-hero-tagline">Sudah suka Ra Hee sejak kelas 6 SD dan tidak pernah pindah hati sekalipun.</p>
+            <div class="char-stat-row">
+                <div class="char-stat-chip"><b>Usia</b> 17 tahun</div>
+                <div class="char-stat-chip"><b>Zodiak</b> Leo</div>
+                <div class="char-stat-chip"><b>Kelas</b> 11-B</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><h2>Biodata Pribadi</h2></div>
+        <div class="bio-grid">
+            <div class="bio-row">
+                <div class="bio-label">Nama Lengkap</div>
+                <div class="bio-value">Baek Ryu Jin (백류진)</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Julukan</div>
+                <div class="bio-value">Jae, Black Fox, Si Plester</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Usia</div>
+                <div class="bio-value">17 tahun</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Tanggal Lahir</div>
+                <div class="bio-value">29 Juli</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Zodiak</div>
+                <div class="bio-value">Leo</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Golongan Darah</div>
+                <div class="bio-value">B</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Tinggi Badan</div>
+                <div class="bio-value">185 cm</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Berat Badan</div>
+                <div class="bio-value">72 kg</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Kelas</div>
+                <div class="bio-value">11-B</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><h2>Penampilan</h2></div>
+        <div class="bio-grid">
+            <div class="bio-row">
+                <div class="bio-label">Rambut</div>
+                <div class="bio-value">Hitam pekat, berantakan natural</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Mata</div>
+                <div class="bio-value">Hitam gelap, tajam, selalu terlihat mengantuk tapi tidak ada yang berani bilang</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Ciri Khas</div>
+                <div class="bio-value">Plester hitam di hidung (hampir permanen), anting hoop hitam kecil, bekas luka tipis di rahang kiri, jaket putih yang tidak pernah diganti</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg><h2>Kesukaan &amp; Kebiasaan</h2></div>
+        <div class="bio-grid">
+            <div class="bio-row">
+                <div class="bio-label">Warna Favorit</div>
+                <div class="bio-value">Hitam, putih, abu gelap</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Makanan Favorit</div>
+                <div class="bio-value">Samgyupsal, cup ramen, apapun yang bisa dimakan sambil berdiri</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Minuman</div>
+                <div class="bio-value">Susu coklat dingin (fakta yang dia simpan dengan sangat ketat)</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Musik</div>
+                <div class="bio-value">Hip-hop keras, tapi diam-diam suka acoustic malam hari</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Hobi</div>
+                <div class="bio-value">Basket, berkelahi kalau perlu, duduk sendirian di tempat tinggi</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Kebiasaan</div>
+                <div class="bio-value">Tidur di kelas tapi entah kenapa selalu tahu konteks situasi, menyentuh plester di hidung saat gugup</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg><h2>Kepribadian</h2></div>
+        <div class="trait-columns">
+            <div class="trait-col">
+                <div class="trait-col-label positive"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> Kelebihan</div>
+                <ul class="trait-list">
+                    <li>Loyal ekstrem</li>
+                    <li>Protektif</li>
+                    <li>Tidak pernah bohong</li>
+                    <li>Berani</li>
+                    <li>Diam-diam perhatian</li>
+                </ul>
+            </div>
+            <div class="trait-col">
+                <div class="trait-col-label negative"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg> Kekurangan</div>
+                <ul class="trait-list">
+                    <li>Pemarah</li>
+                    <li>Posesif</li>
+                    <li>Susah mengungkapkan perasaan</li>
+                    <li>Menyelesaikan masalah dengan cara yang salah</li>
+                    <li>Gengsi ketinggian langit</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg><h2>Fakta Tambahan</h2></div>
+        <ul class="facts-list">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Sudah suka Ra Hee sejak kelas 6 SD dan tidak pernah pindah hati sekalipun</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Plester di hidung bukan selalu karena luka — kadang dia pasang meski sudah sembuh, tanpa tahu kenapa</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Jago basket tapi tidak ikut tim resmi karena malas aturan</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Punya adik perempuan yang sangat dia sayangi — satu-satunya kelemahannya yang semua orang tahu</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Kenal Shin Joon Ho lebih lama dari yang terlihat</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Nilai paling bagus: Olahraga</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Nilai paling jelek: Semua yang lain (tapi cukup untuk naik kelas)</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Tidak pernah tidur nyenyak kalau Ra Hee sedang di luar malam hari</span></li>
+        </ul>
+    </section>
+
+
+    <div class="char-nav-footer">
+        <a class="nav-chapter-btn" href="choi-ra-hee.html"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg><span class="btn-text">Choi Ra Hee</span></a>
+        <a class="nav-chapter-btn primary" href="shin-joon-ho.html"><span class="btn-text">Shin Joon Ho</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h8M9 3l4 4-4 4"/></svg></a>
+    </div>
+
+    <footer>
+        <div class="footer-title">Her Three Fools</div>
+        <div class="footer-note">Original AU &middot; Semua karakter adalah fiksi &middot; Dilarang plagiasi</div>
+    </footer>
+
+    <script src="../assets/site.js"></script>
+</body>
+
+</html>

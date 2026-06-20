@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choi Ra Hee | Her Three Fools</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a class="nav-logo" href="../index.html">Her Three Fools</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#prolog">Prolog</a></li>
+                <li><a href="../index.html#characters" class="current">Characters</a></li>
+                <li><a href="../index.html#chapters">Chapters</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Ganti tema" style="cursor:pointer;border:none;font-family:'Inter',sans-serif;">
+                <div class="toggle-icon" id="icon-dark">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </div>
+                <div class="toggle-icon" id="icon-light">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                </div>
+            </button>
+            <button class="hamburger-btn" onclick="openMobileMenu()" aria-label="Menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Tutup menu">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <a href="../index.html#prolog">Prolog</a>
+        <a href="../index.html#characters" class="current">Characters</a>
+        <a href="../index.html#chapters">Chapters</a>
+    </div>
+
+    <div class="char-hero">
+        <div class="char-hero-photo">
+            <img src="../assets/images/choi-ra-hee.jpg" alt="Choi Ra Hee" />
+        </div>
+        <div class="char-hero-info">
+            <a class="reader-back" href="../index.html#characters"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg> Kembali ke Daftar Karakter</a>
+            <div class="hero-eyebrow">"Queen of Trouble"</div>
+            <h1 class="reader-title">Choi Ra Hee</h1>
+            <div class="char-hero-name-kr">최라희 · Kelas 11-A</div>
+            <p class="char-hero-tagline">Tidak percaya pada cinta. Tidak percaya pada ketulusan. Sampai tiga orang bodoh itu muncul — dan merusak segalanya.</p>
+            <div class="char-stat-row">
+                <div class="char-stat-chip"><b>Usia</b> 17 tahun</div>
+                <div class="char-stat-chip"><b>Zodiak</b> Libra</div>
+                <div class="char-stat-chip"><b>Kelas</b> 11-A</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><h2>Biodata Pribadi</h2></div>
+        <div class="bio-grid">
+            <div class="bio-row">
+                <div class="bio-label">Nama Lengkap</div>
+                <div class="bio-value">Choi Ra Hee (최라희)</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Julukan</div>
+                <div class="bio-value">Ra, Queen, Trouble Maker</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Usia</div>
+                <div class="bio-value">17 tahun</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Tanggal Lahir</div>
+                <div class="bio-value">13 Oktober</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Zodiak</div>
+                <div class="bio-value">Libra</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Golongan Darah</div>
+                <div class="bio-value">O</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Tinggi Badan</div>
+                <div class="bio-value">167 cm</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Berat Badan</div>
+                <div class="bio-value">52 kg</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Kelas</div>
+                <div class="bio-value">11-A</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><h2>Penampilan</h2></div>
+        <div class="bio-grid">
+            <div class="bio-row">
+                <div class="bio-label">Rambut</div>
+                <div class="bio-value">Coklat gelap, panjang, lurus</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Mata</div>
+                <div class="bio-value">Coklat tua, tatapan tajam</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Ciri Khas</div>
+                <div class="bio-value">Banyak piercing di kedua telinga, tato kecil bintang di bawah mata kanan, plester kecil di pipi kiri, choker hitam, dasi seragam selalu longgar</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg><h2>Kesukaan &amp; Kebiasaan</h2></div>
+        <div class="bio-grid">
+            <div class="bio-row">
+                <div class="bio-label">Warna Favorit</div>
+                <div class="bio-value">Hitam, merah tua, abu-abu</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Makanan Favorit</div>
+                <div class="bio-value">Tteokbokki pedas level tertinggi, ramen instan jam 2 pagi</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Minuman</div>
+                <div class="bio-value">Americano tanpa gula</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Musik</div>
+                <div class="bio-value">Hip-hop, R&amp;B underground</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Hobi</div>
+                <div class="bio-value">Balapan motor malam hari, duduk di atap dan memandang kota</div>
+            </div>
+            <div class="bio-row">
+                <div class="bio-label">Kebiasaan</div>
+                <div class="bio-value">Selalu menutup mata saat mendengarkan musik, mengetuk-ngetuk meja saat bosan</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg><h2>Kepribadian</h2></div>
+        <div class="trait-columns">
+            <div class="trait-col">
+                <div class="trait-col-label positive"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> Kelebihan</div>
+                <ul class="trait-list">
+                    <li>Pemberani</li>
+                    <li>Setia</li>
+                    <li>Perhatian diam-diam</li>
+                    <li>Tidak pernah berbohong</li>
+                    <li>Protektif terhadap orang yang dia sayang</li>
+                </ul>
+            </div>
+            <div class="trait-col">
+                <div class="trait-col-label negative"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg> Kekurangan</div>
+                <ul class="trait-list">
+                    <li>Susah percaya orang</li>
+                    <li>Keras kepala</li>
+                    <li>Impulsif</li>
+                    <li>Susah minta tolong</li>
+                    <li>Sering menutup diri</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section">
+        <div class="bio-section-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg><h2>Fakta Tambahan</h2></div>
+        <ul class="facts-list">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Diam-diam suka membaca novel tengah malam</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Tidak pernah menangis di depan orang lain — bahkan sendirian pun jarang</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Jago masak tapi tidak pernah mengakuinya</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Anjing takut sama dia, kucing justru selalu mendekat</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Nilai paling bagus: Bahasa Korea</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Nilai paling jelek: Kimia (48)</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Punya satu teman dekat sejati: Kim Soo Yeon</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span>Tidak pernah lebih dari 3 hari tidak naik motor</span></li>
+        </ul>
+    </section>
+
+
+    <div class="char-nav-footer">
+        <a class="nav-chapter-btn" href="jung-woo-bin.html"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg><span class="btn-text">Jung Woo Bin</span></a>
+        <a class="nav-chapter-btn primary" href="baek-ryu-jin.html"><span class="btn-text">Baek Ryu Jin</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h8M9 3l4 4-4 4"/></svg></a>
+    </div>
+
+    <footer>
+        <div class="footer-title">Her Three Fools</div>
+        <div class="footer-note">Original AU &middot; Semua karakter adalah fiksi &middot; Dilarang plagiasi</div>
+    </footer>
+
+    <script src="../assets/site.js"></script>
+</body>
+
+</html>
